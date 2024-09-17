@@ -1,0 +1,189 @@
+#home{
+    background-color: var(--primary);
+    width: 100%;
+    min-height: 100%;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+.home{
+    display: flex;
+    flex-direction: column;   
+}
+.hi{
+    color: var(--accent);
+    font-size: 2.5rem;
+    font-family: "Dancing Script";
+    /* font-weight: 700; */
+}
+.name{
+    font-size: 5rem;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+}
+.front-end{
+    font-size: 4rem;
+    color: #666;
+}
+
+.desc{
+    font-size: 20px;
+    width: 50%;
+    font-family: "Poppins";
+}
+
+.home-buttons{
+    margin-top: 20px;
+    /* width: 150; */
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.home-button{
+    font-size: 20px;
+    box-shadow: 10px 10px 6px 1px rgba(10, 99, 169, 0.2), -10px -10px 6px 1px rgba(255, 255, 255, 0.9);
+    outline: none;
+    border: none;
+    background-color: var(--accent);
+    padding: 8px 30px;
+    border-radius: 0 30px 0 30px;
+    color: var(--primary);    
+    font-family: "poppins";  
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.icon{
+    color: var(--accent);  
+    font-size: 40px;  
+    transition: color 0.3s ease;
+    box-shadow: 6px 6px 3px 1px rgba(10, 69, 169, 0.2), -6px -6px 3px 1px rgba(255, 255, 255);  
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* color: var(--faded-black); */
+  }
+
+  .github{
+    position: absolute;
+    right: 250px;
+  }
+  .linkedin{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+  }
+  .twitter{
+    position: absolute;
+    right: 150px;
+    top: 100px;
+
+  }
+  .instagram{
+    position: absolute;
+    right: 150px;
+    top: 200px;
+  }
+  .facebook{
+    position: absolute;
+    right: 200px;
+    top: 250px;
+  }
+  .whatsapp{
+    position: absolute;
+    right: 250px;
+    top: 300px;
+  }
+  .email{
+    position: absolute;
+    right: 100px;
+    top: 150px;
+  }
+  
+/* WRITING MEDIA QUERY FOR SMALLER SCREEN DEVICES */
+  @media screen and (max-width: 576px){
+    #home{
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+    .desc{
+      width: 100%;
+    }
+    .name{
+      font-size: 2.5rem;
+    }
+    .front-end{
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .home-button{
+      width: 150px;
+    }
+
+    /* .github{
+      position: absolute;
+      right: 200px;
+      top: 20px;
+    }
+    .linkedin{
+      position: absolute;
+      right: 150px;
+      top: 50px;
+    }
+    .twitter{
+      position: absolute;
+      right: 100px;
+    }
+    .instagram{
+      position: absolute;
+      right: 100px;
+      top: 100px;
+    }
+    .facebook{
+      position: absolute;
+      right: 150px;
+      top: 180px;
+    }
+    .whatsapp{
+      position: absolute;
+      right: 200px;
+      top: 200px;
+    }
+    .email{
+      position: absolute;
+      right: 100px;
+      top: 150px;
+    } */
+
+    .icons{
+      display: grid;
+      gap: 30px;
+      position: relative;
+      grid-template-columns: repeat(5, 1fr);
+  }
+  .github, .linkedin, .twitter, .email, .instagram, .facebook, .whatsapp{
+    position: initial;
+  }
+
+
+  }
+  @media screen and (max-width: 768px){
+ 
+  } 
+
+  @media screen and (max-width: 992px){
+ 
+  }  
+  @media screen and (max-width: 1200px){
+ 
+  }  

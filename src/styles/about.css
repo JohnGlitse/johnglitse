@@ -1,0 +1,166 @@
+#about{
+    background-color: var(--secondary);
+    width: 100%;
+    min-height: 100%;
+    padding: var(--page-padding);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+h1{
+    font-family: "Poppins";
+    font-size: 50px;
+    color: var(--faded-black);
+    position: relative;
+}
+h1::before{
+	content: '';
+	width: 15%;
+	height: 4px;
+	background: var(--accent);
+	position: absolute;
+	bottom: 0;
+}
+
+.sub-head{
+    font-family: "dancing script";
+    font-size: 30px;
+    color: var(--accent);
+}
+
+.history{
+    font-size: 16px;
+    font-family: "Poppins";
+    /* box-shadow: var(--box-shadow); */
+    padding: 10px;
+}
+
+.about-tabs ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.tab{
+    font-size: 16px;
+    cursor: pointer;
+    /* position: relative; */
+    box-shadow: var(--box-shadow);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: "poppins";
+    font-weight: 700;
+}
+.tab.active::before{
+    /* content: "";
+    position: absolute;
+    background-color: var(--accent);
+    bottom: 0;
+    width: 100%;
+    height: 4px; */
+}
+.tab.active{
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+.content{
+    display: none;
+    padding: 20px;
+    font-size: 14px;
+    font-family: "poppins";
+}
+.content.active{
+    display: block;
+}
+
+.exp-head{
+    font-size: 20px;
+    font-weight: bold;
+}
+.exp-sub-head{
+    font-style: italic;
+    color: var(--accent);
+}
+
+.stack{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "dancing script";
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 20px;
+    padding-top: 20px;
+}
+.skill-img{
+    width: 80px;
+    height: 60px;
+    overflow: hidden;
+    background-color: var(--primary);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 12px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+}
+.skill-img img{
+    width:  100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.about-img{
+    overflow: hidden;
+    width: 80%;
+    height: 500px;
+    flex: 1;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    border-radius: 12px;
+    /* border-radius: 50%; */
+}
+.about-img img{
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+/* WRITING MEDIA QUERY FOR SMALLER SCREEN DEVICES */
+@media screen and (max-width: 576px){
+    #about{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .tab{
+        padding: 6px 10px;
+        font-size: 12px;
+        box-shadow: var(--box-shadow2);
+    }
+    .about-img{
+        width: 100%;
+        aspect-ratio: 1/.8;
+        margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 768px){
+ 
+  } 
+
+  @media screen and (max-width: 992px){
+ 
+  }  
+  @media screen and (max-width: 1200px){
+ 
+  }  
+

@@ -1,0 +1,105 @@
+#services{
+    width: 100%;
+    min-height: 100%;
+    /* background-color: var(--primary); */
+    background-color: var(--primary2);
+    display: flex;
+    flex-direction: column;
+    padding: var(--page-padding);
+    gap: 40px;
+    font-family: "poppins";
+}
+#services > p{
+    font-family: "dancing script";
+    color: var(--accent);
+    font-size: 30px;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.service{
+    /* box-shadow: var(--box-shadow); */
+    box-shadow: var(--box-shadow2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 12px;
+    white-space: nowwrap;
+}
+.service-head{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "dancing script";
+}
+.service > p{
+    font-size: 20px;
+    
+}
+
+.icon{
+    color: var(--accent);  
+    font-size: 40px;  
+    transition: color 0.3s ease;
+    box-shadow: 6px 6px 3px 1px rgba(10, 69, 169, 0.2), -6px -6px 3px 1px rgba(255, 255, 255);  
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;    
+}
+
+@media screen and (max-width: 576px){
+    #services{
+        padding: 40px 10px;
+    }
+    /* .services{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .service{
+        padding: 10px;
+        gap: 10px;
+    } */
+    .service > p {
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 35px;
+        pad: 6px;
+    }
+  
+    .service-head {
+        font-size: 26px;  
+        
+    }
+    .service-head > span{
+        /* display: none; */
+    }
+    /* Testing the horizontal scroll */
+    .services{
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        padding: 10px 20px;
+    }
+    .services::-webkit-scrollbar{
+        display: none;
+    }
+    .service{
+        min-width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+} 
+
+@media screen and (max-width: 992px){
+
+}  
+@media screen and (max-width: 1200px){
+
+}  
