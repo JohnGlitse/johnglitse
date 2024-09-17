@@ -10,6 +10,7 @@
 }
 
 .navbar-content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 300px; 
@@ -21,7 +22,7 @@
 #logo{
     font-size: 30px;
     color: var(--accent);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "anton";
     cursor: pointer;
 } 
 
@@ -51,11 +52,20 @@
 }
 #menu-icon{
     position: absolute;
-    right: 16px;
+    right: 25px;
     display: none;
+    font-size: 30px;
+    color: var(--accent);
+    box-shadow: var(--box-shadow2);
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 576px){
+    .navbar{
+        padding: 0 20px;
+    }
     nav{
         position: relative;
     }
@@ -66,9 +76,15 @@
         position: absolute;
         right: 0;
         top: 0;
+        background-color: var(--secondary);
+        padding: 20px;
     }
     #menu-icon{
         display: block;
+    }
+
+    #logo{
+        font-size: 24px;
     }
     
 }

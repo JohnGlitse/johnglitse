@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/mywork.css";
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub} from 'react-icons/fa';
 import { FaUpRightFromSquare } from 'react-icons/fa6';
 
 const Mywork = () => {
