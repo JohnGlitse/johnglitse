@@ -153,6 +153,35 @@ h1::before{
 
   }
 
+  @media screen and (min-width: 970px) and (max-width: 1024px) {
+  #about{
+    padding: 60px 20px;
+  }
+      
+ }
+
+ @media screen and (min-width: 577px) and (max-width: 969px) {   
+    #about{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-tabs ul{
+        gap: 20px;
+    }
+
+    .about-img{
+        width: 100%;
+        aspect-ratio: 1/.7;
+        margin-top: 0;
+    }
+
+
+
+}
+   
+    
+
   @media screen and (max-width: 768px){
  
   } 

@@ -48,12 +48,14 @@
  
 html{
     scroll-behavior: smooth;
-    scrollbar-width: 0;
+    scrollbar-width: 0; 
 } 
 html, body{
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
+
+
 body{
     font-family: "poppins";
 }

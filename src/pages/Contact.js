@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/contact.css";
-import { FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone} from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
        <p>Let's connect and build something great together</p>
       <div className='contact'>
         <div className='contact-details'>
-          <div style={{display: "flex", gap: "10px", alignItems: "center"}}>
+          <div style={{display: "flex", gap: "10px", alignItems: "center"}} >
            <FaLocationDot className='icon'/>       
            <div>
            <div className='location'>LG25, University of Ghana</div> 

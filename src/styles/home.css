@@ -117,6 +117,8 @@
     #home{
       flex-direction: column;
       padding: 30px 20px;
+      height: 100vh;
+      justify-content: space-around;
     }
     .desc{
       width: 100%;
@@ -179,8 +181,34 @@
 
 
   }
+
+  @media screen and (min-width: 200px) and (max-width: 349px){
+    #home{
+      min-height: 110vh;
+    }
+    .home-buttons{
+      flex-direction: column;
+    }
+    .icons{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
+ .icons{
+      display: flex;
+      gap: 20px;
+      position: relative;
+      flex-direction: column;
+  }
+  .github, .linkedin, .twitter, .email, .instagram, .facebook, .whatsapp{
+    position: initial;
+  }
+   
+    
+  }
+
   @media screen and (max-width: 768px){
- 
   } 
 
   @media screen and (max-width: 992px){

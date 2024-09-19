@@ -15,7 +15,9 @@ const Mywork = () => {
         <p>Every project is a distinct piece of work.</p>
         <div className='mywork'>
             {/* FIRST PROJECT */}
-        <div className='work-img'><div className='img'><img src='images/bookshop.png'/></div></div>
+        <div className='work-img'><div className='img'>
+        <img src={`${process.env.PUBLIC_URL}/images/bookshop.png`} />
+          </div></div>
 
           <div className="work-text">
             <h2 className='project-title'>Buks</h2>
@@ -63,7 +65,9 @@ const Mywork = () => {
             </span>
           </div>        
           
-          <div className='work-img'><div className='img'><img src='images/maranatha.png'/></div></div>
+          <div className='work-img'><div className='img'>
+          <img src={`${process.env.PUBLIC_URL}/images/maranatha.png`} />
+            </div></div>
         </div>        
       </div>
        <hr/>
@@ -72,7 +76,9 @@ const Mywork = () => {
      <div className='all-projects'>
         <div className='mywork'>
             {/* FIRST PROJECT */}
-        <div className='work-img'><div className='img'><img src='images/pfa.png'/></div></div>
+        <div className='work-img'><div className='img'>
+        <img src={`${process.env.PUBLIC_URL}/images/pfa.png`} />
+          </div></div>
 
           <div className="work-text">
             <h2 className='project-title'>Forex Trading Academy</h2>
@@ -119,7 +125,9 @@ const Mywork = () => {
             </span>
           </div>        
 
-          <div className='work-img'><div className='img'><img src='images/talkwithexperts.png'/></div></div>   
+          <div className='work-img'><div className='img'>
+          <img src={`${process.env.PUBLIC_URL}/images/talkwithexperts.png`} />
+            </div></div>   
         </div>           
       </div>     
       <hr/>     
@@ -128,7 +136,9 @@ const Mywork = () => {
     <div className='all-projects'>
  
         <div className='mywork'>
-        <div className='work-img'><div className='img'><img src='images/jglitse.png'/></div></div>
+        <div className='work-img'><div className='img'>
+        <img src={`${process.env.PUBLIC_URL}/images/jglitse.png`} />
+          </div></div>
 
           <div className="work-text">
             <h2 className='project-title'>My Portfolio</h2>

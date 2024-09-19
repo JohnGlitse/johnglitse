@@ -92,6 +92,15 @@ form button{
         gap: 10px;
     }
 }
+@media screen and (min-width: 577px) and (max-width: 755px){
+    .contact{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .contact-details{
+        gap: 20px;
+    }
+} 
 
 @media screen and (max-width: 768px){
 

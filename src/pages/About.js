@@ -36,12 +36,13 @@ const About = () => {
             <div className={currentTab === 1? "content active" : "content"}>
               <p className='stack'>My Technological Skills</p>
               <div className='skills'>
-                <div className='skill-img'><img src='images/php.png'/></div>
-                <div className='skill-img'><img src='images/javascript.png'/></div>
-                <div className='skill-img'><img src='images/flutter.png'/></div>
-                <div className='skill-img'><img src='images/react.png'/></div>
-                <div className='skill-img'><img src='images/css.png'/></div>
-                <div className='skill-img'><img src='images/html.png'/></div>
+                <div className='skill-img'><img src={`${process.env.PUBLIC_URL}/images/php.png`} /></div>
+
+                <div className='skill-img'><img src={`${process.env.PUBLIC_URL}/images/javascript.png`} /></div>
+                <div className='skill-img'><img src={`${process.env.PUBLIC_URL}/images/flutter.png`} /></div>
+                <div className='skill-img'><img src={`${process.env.PUBLIC_URL}/images/react.png`} /></div>
+                <div className='skill-img'> <img src={`${process.env.PUBLIC_URL}/images/html.png`} /></div>
+                <div className='skill-img'> <img src={`${process.env.PUBLIC_URL}/images/css.png`} /></div>
               </div>
             </div>
             
@@ -64,7 +65,9 @@ const About = () => {
       </div>
       <div className='about-img'>
         {/* <img src='images/img_avatar.png'/> */}
-        <img src='images/image4.jpg'/>
+        {/* <img src='images/image4.jpg'/> */}
+        <img src={`${process.env.PUBLIC_URL}/images/image4.jpg`} />
+
       </div>
     </div>
   )

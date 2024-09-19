@@ -97,6 +97,27 @@ span  p{
     }
 }
 
+@media screen and (min-width: 200px) and (max-width: 349px){
+    span > a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1000px){
+    #mywork{
+        padding: 60px 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 755px){
+    #mywork{
+        padding: 80px;
+    }
+    .mywork{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 768px){
 
 } 
@@ -107,3 +128,4 @@ span  p{
 @media screen and (max-width: 1200px){
 
 }  
+
