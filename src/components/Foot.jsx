@@ -24,7 +24,7 @@ const Foot = () => {
         </div>
             
         <div className='footer-links'>
-        <div id='logo'>{"<JG./>"}</div>
+        <div id='logo'>{"JG."}</div>
           <div className='footer-nav'>
           <ul>
                     <li><a href='#home'>Home</a></li>

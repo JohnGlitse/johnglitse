@@ -38,6 +38,15 @@
     --primary2: #f2e8cf;        
 }
 
+.changeColor{
+     --primary: #fefae0;
+    --secondary: #faedcd;
+    --accent:  #bc6c25; 
+    --alternate: #0196e3; 
+    --faded-black: #555;
+    --primary2: #eae2b7;    
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -52,7 +61,7 @@ html{
 } 
 html, body{
     max-width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 

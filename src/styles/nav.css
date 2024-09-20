@@ -19,7 +19,7 @@
     /* gap: 300px;  */
     padding: 20px 0;
     border-bottom: 1px solid var(--accent); 
-  }
+  } 
 
 
 #logo{
@@ -33,6 +33,7 @@
     display: flex;
     gap: 20px;
 }
+
 .navbar nav ul li a{
     color: var(--faded-black);
     font-size: 20px;
@@ -75,14 +76,25 @@
         flex-direction: column;
         z-index: 6;
         position: absolute;
-        right: 100px;
-        top: 0;
+        right: 0;
+        top: 80px;
+        gap: 0;
         background-color: var(--secondary);
-        padding: 20px;
+        width: 80%;
+       
     }
     .navbar nav ul li{
         border-bottom: 1px solid var(--faded-black);
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
+        animation: animation1 2s ease forwards;
+        transform: rotate(90deg);
+        background-color: var(--secondary);
+        padding: 20px 20px 15px 20px;
+    }
+    @keyframes animation1 {
+        to{
+            transform: rotate(0);
+        }
     }
     .navbar nav ul.active{
         display: flex;
@@ -107,3 +119,4 @@
 @media screen and (max-width: 1200px){
 
 }  
+

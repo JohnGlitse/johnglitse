@@ -9,7 +9,7 @@ import Foot from "./components/Foot";
 import { FaArrowUp } from "react-icons/fa";
  
 
-function App() {
+ function App() {
   const setPrimaryTheme = () =>{
     document.querySelector("body").setAttribute("data-theme", "dark");
     localStorage.setItem("selectedTheme", "dark")
@@ -33,7 +33,10 @@ function App() {
     }else{
       setSecondaryTheme()
     }
+
   }
+
+
 
   // THIS CODE SENDS THE USER BACK TO THE TOP OF THE PAGE
   const toTop = () =>{

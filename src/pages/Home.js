@@ -15,7 +15,7 @@ const Home = () => {
       {/* <Navbar /> */}
         <div className='home'>
             <p className='hi'>Hi, my name is</p>
-            <p className='name'>Mike Dane</p>
+            <p className='name'>John Glitse</p>
             <p className='front-end'>A Full-Stack Developer.</p>
             <p className='desc'>
               {/* I am a software developer based in Ghana.  */}
