@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/johnglitse/static/css/main.fac9a2b5.css",
-    "main.js": "/johnglitse/static/js/main.99a9cdf2.js",
+    "main.css": "/johnglitse/static/css/main.0a5fc722.css",
+    "main.js": "/johnglitse/static/js/main.940dca68.js",
     "index.html": "/johnglitse/index.html",
-    "main.fac9a2b5.css.map": "/johnglitse/static/css/main.fac9a2b5.css.map",
-    "main.99a9cdf2.js.map": "/johnglitse/static/js/main.99a9cdf2.js.map"
+    "main.0a5fc722.css.map": "/johnglitse/static/css/main.0a5fc722.css.map",
+    "main.940dca68.js.map": "/johnglitse/static/js/main.940dca68.js.map"
   },
   "entrypoints": [
-    "static/css/main.fac9a2b5.css",
-    "static/js/main.99a9cdf2.js"
+    "static/css/main.0a5fc722.css",
+    "static/js/main.940dca68.js"
   ]
 }
