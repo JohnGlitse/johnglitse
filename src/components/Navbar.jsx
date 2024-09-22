@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/nav.css";
-import { FaBars, FaToggleOff } from 'react-icons/fa';
+import { FaBars, FaSun, FaTimes} from 'react-icons/fa';
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
@@ -10,14 +10,14 @@ const Navbar = () => {
 
    function changeBG(){
     document.querySelector("body").classList.toggle('changeColor');
-    localStorage.setItem("selectedTheme", "changeColor");
+  //   localStorage.setItem("selectedTheme", "changeColor");
     
-   const selectedTheme = localStorage.getItem("selectedTheme");
-   if(selectedTheme == "changeColor"){
-    document.querySelector("body").classList.add('changeColor');
-   }else{
-    document.querySelector("body").classList.remove('changeColor');
-   }
+  //  const selectedTheme = localStorage.getItem("selectedTheme");
+  //  if(selectedTheme == "changeColor"){
+  //   document.querySelector("body").classList.add('changeColor');
+  //  }else{
+  //   document.querySelector("body").classList.remove('changeColor');
+  //  }
 
    }
   
@@ -26,7 +26,7 @@ const Navbar = () => {
     <div  className='navbar'>
         <div className='navbar-content'>
             <div id='logo'>{'JG.'}</div>
-            <FaToggleOff onClick={changeBG}/>
+            {/* <FaSun onClick={changeBG}/> */}
             <nav>
                 <ul className={showNav? "active" : ""}>
                     <li onClick={displayMenu}><a href='#home'>Home</a></li>
@@ -39,8 +39,9 @@ const Navbar = () => {
                 </ul>
                 
             </nav>
-            {/* <div>{showNav?? <FaBars id='menu-icon' onClick={displayMenu}/> : <FaBars id='' onClick={displayMenu}/>}</div> */}
-            <FaBars id='menu-icon' onClick={displayMenu}/>
+             {showNav?  <FaTimes id='menu-close' className='menu' onClick={displayMenu}/> :
+              <FaBars id='menu-icon' className='menu' onClick={displayMenu}/> }
+           {/* <FaBars id='menu-icon' onClick={displayMenu}/> */}
         </div>
     </div>
   )

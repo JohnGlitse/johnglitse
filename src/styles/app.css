@@ -30,6 +30,7 @@
 
 [data-theme ="dark"]{
     --primary: #f2e9e4;
+    --primary: #fefae0;
     /* --secondary: #c9ada7; */
     --secondary: #faedcd;
     /* --accent:  #22223b;  */
@@ -61,7 +62,7 @@ html{
 } 
 html, body{
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 

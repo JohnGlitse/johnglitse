@@ -54,14 +54,19 @@
     color: var(--faded-black);
 }
 #menu-icon{
+}
+#menu-close{
+}
+.menu{
     display: none;
     font-size: 30px;
     color: var(--accent);
     box-shadow: var(--box-shadow2);
     padding: 6px;
     border-radius: 6px;
-    cursor: pointer;
+    cursor: pointer;    
 }
+
 
 @media screen and (max-width: 805px){
     .navbar{
@@ -100,6 +105,11 @@
         display: flex;
     }
     #menu-icon{
+        /* display: block; */
+    }
+    #menu-close{
+    }
+    .menu{
         display: block;
     }
 
