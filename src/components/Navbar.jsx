@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/nav.css";
-import { FaBars, FaSun, FaTimes} from 'react-icons/fa';
+import { FaBars, FaTimes} from 'react-icons/fa';
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
@@ -8,18 +8,9 @@ const Navbar = () => {
     setShowNav(!showNav);
   }
 
-   function changeBG(){
-    document.querySelector("body").classList.toggle('changeColor');
-  //   localStorage.setItem("selectedTheme", "changeColor");
-    
-  //  const selectedTheme = localStorage.getItem("selectedTheme");
-  //  if(selectedTheme == "changeColor"){
-  //   document.querySelector("body").classList.add('changeColor');
-  //  }else{
-  //   document.querySelector("body").classList.remove('changeColor');
+  //  function changeBG(){
+  //   document.querySelector("body").classList.toggle('changeColor');
   //  }
-
-   }
   
 
   return (

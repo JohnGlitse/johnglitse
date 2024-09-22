@@ -80,13 +80,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* Toggle theme with FaSun icon */}
+      
       <FaSun style={iconStyle} onClick={toggleTheme} />
       
-      {/* Scroll to top button */}
       <FaArrowUp style={toTopStyle} onClick={toTop} />
-
-      {/* Sections of the website */}
+ 
       <Home />
       <About />
       <Services />
