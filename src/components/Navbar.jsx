@@ -26,7 +26,7 @@ const Navbar = () => {
                     <li onClick={displayMenu}><a href='#mywork'>Work</a></li>
                     <li onClick={displayMenu}><a href='#contact'>Connect</a></li>
                     {/* <li><Button name="Resume"><a href='#home' id=""></a></Button></li>  */}
-                    <li onClick={displayMenu}><a href='#home' id='resume'>Resume</a></li>
+                    <li onClick={displayMenu}><a href='Glitse John.pdf' download="John Glitse" id='resume'>Resume</a></li>
                 </ul>
                 
             </nav>

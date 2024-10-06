@@ -22,7 +22,7 @@ const Mywork = () => {
           <div className="work-text">
             <h2 className='project-title'>Buks</h2>
             <div className='description'>
-              This is a book selling website where buys can purchase their favorite books ranging from
+              This is a book selling website where users can purchase their favorite books ranging from
               drama, poetry, fiction, non-fiction among others. It fully functional and integrates functionalities 
               such as search system, adding and removing from cart, user login and registration system among others.
             </div>
