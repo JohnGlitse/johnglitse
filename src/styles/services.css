@@ -30,9 +30,9 @@
     white-space: nowwrap;
 }
 .service-head{
-    font-size: 30px;
+    font-size: 1.3rem;
     font-weight: bold;
-    font-family: "dancing script";
+    font-family: "pacifico";
 }
 .service > p{
     font-size: 20px;
@@ -70,7 +70,7 @@
     }
   
     .service-head {
-        font-size: 26px;  
+        font-size: 1.3rem;  
         
     }
     .service-head > span{

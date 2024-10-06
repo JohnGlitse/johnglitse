@@ -113,6 +113,11 @@
   }
   
 /* WRITING MEDIA QUERY FOR SMALLER SCREEN DEVICES */
+/* @media screen and (max-width: 430px){
+  #home{
+    min-height: 100%;
+  }
+} */
   @media screen and (max-width: 576px){
     #home{
       flex-direction: column;

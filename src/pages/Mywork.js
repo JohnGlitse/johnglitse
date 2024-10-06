@@ -41,66 +41,8 @@ const Mywork = () => {
         </div>        
       </div>
       <hr/>
-    {/* THIS IS THE SECOND PROJECT */}
 
-    <div className='all-projects'>
- 
-        <div className='mywork'>
-             
 
-          <div className="work-text">
-            <h2 className='project-title'>Maranatha Guest House</h2>
-            <div className='description'>
-              A hotel management system which intends to integrate user booking sytems in the future.
-              It also has user authentication which will allow users to register and login. 
-            </div>
-            <div className='languages'>
-              <p>JavaScript</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
-            <span>
-            <a href='https://github.com/JohnGlitse/maranathagh'  className='code' target='_blank'> <p>Code <FaGithub /></p></a> 
-            <a href='https://johnglitse.github.io/maranathagh/' className='demo' target='_blank'><p  style={buttonStyle}>Demo <FaUpRightFromSquare /></p></a>
-            </span>
-          </div>        
-          
-          <div className='work-img'><div className='img'>
-          <img src={`${process.env.PUBLIC_URL}/images/maranatha.png`} />
-            </div></div>
-        </div>        
-      </div>
-       <hr/>
-     {/* THIS IS THE THIRD PROJECT */}
-
-     <div className='all-projects'>
-        <div className='mywork'>
-            {/* FIRST PROJECT */}
-        <div className='work-img'><div className='img'>
-        <img src={`${process.env.PUBLIC_URL}/images/pfa.png`} />
-          </div></div>
-
-          <div className="work-text">
-            <h2 className='project-title'>Forex Trading Academy</h2>
-            <div className='description'>
-              This a website where users can learn about forex trading from beginner to advanced level. 
-              Intends to integrate user login and registration in the future and giving registered user 
-              the chance to access lecture vidios online. 
-            </div>
-            <div className='languages'>
-              <p>JavaScript</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
-            <span>
-            <a href='https://github.com/JohnGlitse/pfa'  className='code' target='_blank'> <p>Code <FaGithub /></p></a> 
-            <a href='https://johnglitse.github.io/pfa/' className='demo' target='_blank'><p  style={buttonStyle}>Demo <FaUpRightFromSquare /></p></a>
-            </span>
-          </div>        
-          
-        </div>        
-      </div>     
-      <hr/>
           {/* THIS IS THE FOURTH PROJECT */}
 
 
@@ -132,6 +74,101 @@ const Mywork = () => {
       </div>     
       <hr/>     
 
+
+
+     {/* THIS IS THE THIRD PROJECT */}
+
+     <div className='all-projects'>
+        <div className='mywork'>
+            {/* FIRST PROJECT */}
+        <div className='work-img'><div className='img'>
+        <img src={`${process.env.PUBLIC_URL}/images/pfa.png`} />
+          </div></div>
+
+          <div className="work-text">
+            <h2 className='project-title'>Forex Trading Academy</h2>
+            <div className='description'>
+              This a website where users can learn about forex trading from beginner to advanced level. 
+              Intends to integrate user login and registration in the future and giving registered user 
+              the chance to access lecture vidios online. 
+            </div>
+            <div className='languages'>
+              <p>JavaScript</p>
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+            <span>
+            <a href='https://github.com/JohnGlitse/pfa'  className='code' target='_blank'> <p>Code <FaGithub /></p></a> 
+            <a href='https://johnglitse.github.io/pfa/' className='demo' target='_blank'><p  style={buttonStyle}>Demo <FaUpRightFromSquare /></p></a>
+            </span>
+          </div>        
+          
+        </div>        
+      </div>     
+      <hr/>
+
+
+     {/* THIS IS THE FLUTTER PROJECT */}
+
+     <div className='all-projects'>
+        <div className='mywork'>
+
+          <div className="work-text">
+            <h2 className='project-title'>MTN Mobile App UI clone</h2>
+            <div className='description'>
+              In this project, cloned the MTN mobile application using FLUTTER only. This is just a clone of the 
+              MTN mobile application UI with no backend.
+            </div>
+            <div className='languages'>
+              <p>FLUTTER</p>
+            </div>
+            <span>
+            <a href='https://github.com/JohnGlitse/mtnclone'  className='code' target='_blank'> <p>Code <FaGithub /></p></a> 
+            <a href='https://github.com/JohnGlitse/mtnclone' className='demo' target='_blank'><p  style={buttonStyle}>Demo <FaUpRightFromSquare /></p></a>
+            </span>
+          </div>  
+          <div className='work-img'><div className='img'>
+        <img src={`${process.env.PUBLIC_URL}/images/mtn.jpg`} />
+          </div>
+          </div>        
+          
+        </div>       
+
+      </div>     
+      <hr/>
+
+    {/* THIS IS THE SECOND PROJECT */}
+
+    <div className='all-projects'>
+ 
+        <div className='mywork'>
+             
+
+          <div className="work-text">
+            <h2 className='project-title'>Maranatha Guest House</h2>
+            <div className='description'>
+              A hotel management system which intends to integrate user booking sytems in the future.
+              It also has user authentication which will allow users to register and login. 
+            </div>
+            <div className='languages'>
+              <p>JavaScript</p>
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+            <span>
+            <a href='https://github.com/JohnGlitse/maranathagh'  className='code' target='_blank'> <p>Code <FaGithub /></p></a> 
+            <a href='https://johnglitse.github.io/maranathagh/' className='demo' target='_blank'><p  style={buttonStyle}>Demo <FaUpRightFromSquare /></p></a>
+            </span>
+          </div>        
+          
+          <div className='work-img'><div className='img'>
+          <img src={`${process.env.PUBLIC_URL}/images/maranatha.png`} />
+            </div></div>
+        </div>        
+      </div>
+       <hr/>
+
+
     {/* THE FIFTH PROJECT */}
     <div className='all-projects'>
  
@@ -141,11 +178,11 @@ const Mywork = () => {
           </div></div>
 
           <div className="work-text">
-            <h2 className='project-title'>My Portfolio</h2>
+            <h2 className='project-title'>Portfolio Website</h2>
             <div className='description'>
-              This is a book selling website where buys can purchase their favorite books ranging from
-              drama, poetry, fiction, non-fiction among others. It fully functional and integrates functionalities 
-              such as search system, adding and removing from cart, user login and registration system among others.
+               This is a personal portfolio website where you get to know the person behind the code.
+               On this wesite, I tell a story about myself in Technology and my life outside programming.
+               I also showcase my creative projects on this portfolio.
             </div>
             <div className='languages'>
               <p>PHP</p>
@@ -160,6 +197,8 @@ const Mywork = () => {
         </div>        
       </div>
       <hr/>
+
+
 
 
     </div>

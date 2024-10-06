@@ -62,12 +62,22 @@ html{
 } 
 html, body{
     max-width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 
 body{
     font-family: "poppins";
+}
+
+.fasun{
+    position: fixed;
+    right: 65%;
+    top: 30px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--accent);    
 }
 
 .button{
@@ -141,6 +151,23 @@ body{
     }
     .line{
         width: 15%;
+    }
+    .fasun{
+        position: fixed;
+        right: 45%;
+        top: 30px;
+        z-index: 100;
+        cursor: pointer;
+        font-size: 22px;
+        color: var(--accent);    
+    }
+
+}
+
+@media screen and (min-width: 805px) and (max-width: 1000px){
+    .fasun{
+        right: 16px;
+        top: 150px;
     }
 }
 

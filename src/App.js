@@ -56,14 +56,16 @@ function App() {
   };
 
   // Styles for the theme toggle button (sun icon) and scroll to top button
-  const iconStyle = {
-    position: "fixed",
-    right: "16px",
-    top: "200px",
-    cursor: "pointer",
-    fontSize: "22px",
-    color: "var(--accent)",
-  };
+  // const iconStyle = {
+  //   position: "fixed",
+  //   right: "45%",
+  //   // tranform: "translateY(-50%)",
+  //   top: "3px",
+  //   zIndex: "100",
+  //   cursor: "pointer",
+  //   fontSize: "22px",
+  //   color: "var(--accent)",
+  // };
 
   const toTopStyle = {
     position: "fixed",
@@ -81,7 +83,7 @@ function App() {
     <div className="App">
       <Navbar />
       
-      <FaSun style={iconStyle} onClick={toggleTheme} />
+      <FaSun  onClick={toggleTheme} className="fasun" />
       
       <FaArrowUp style={toTopStyle} onClick={toTop} />
  
