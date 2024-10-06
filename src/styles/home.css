@@ -122,7 +122,7 @@
     #home{
       flex-direction: column;
       padding: 30px 20px;
-      height: 100vh;
+      height: 90vh;
       justify-content: space-around;
     }
     .desc{
