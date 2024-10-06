@@ -1,29 +1,51 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import "../styles/about.css";
 
 const About = () => {
   // let [tabToggle, setTabToggle] = useState(false);
   const [currentTab, setCurrentTab] = useState(1);
+  const read = useRef();
+  const readmore = useRef();
+
   const tabClicked = (id) =>{
     setCurrentTab(id);
   }
-  return (
+
+  const readMore = () =>{
+    if(read.current.style.display === "none"){
+      read.current.style.display = "block";
+      readmore.current.innerHTML = "Read Less";
+    }else{
+      read.current.style.display = "none";
+      readmore.current.innerHTML = "Read More";
+    }
+  }
+    return (
     <div id='about'>
       <div className='about-text'>
         <h1>My Story</h1>
         <p className='sub-head'>My story in tech and beyond</p>
         <div className='history'>
+          <p className='p1'>
           I am full-stack web and mobile app developer with keen passion for building beautiful and user-friendly software. 
           I am a very quick learner and team player. In my free time, I enjoy listening to music, 
-          I have always had love for good music and find that it helps to relax and inspire me in the work.
-          <br/> <br/>
+          I have always had love for good music and find that it helps to relax and inspire me in the work.            
+          </p>
+          {/* <br/> <br/> */}
+          <p className='p2' ref={read}>
           I studied BA Education (Psychology and Information Studies), and wanted to work as a Clinical Psychologist, 
-          but decided to gain some computing skills to complement what I already learnt in Information Studies.
-          <br/> <br/>
+          but decided to gain some computing skills to complement what I already learnt in Information Studies.   
+            <br/> <br/>
           Though challenging at first, I embraced the learning curve and discovered that coding was something 
           I was truly passionate about. Now, I’m excited to build intuitive, 
-          impactful projects and continue growing as a developer.
-                    
+          impactful projects and continue growing as a developer.                          
+          </p> 
+         
+
+          {/* <p className='p3' ref={read}>
+              
+          </p> */}
+               <button className='read-more' onClick={readMore} ref={readmore}>Read More</button>     
         </div>
 
         <div className='about-tabs'>
