@@ -1,14 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/contact.css";
 import { FaEnvelope, FaPhone} from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 
 const Contact = () => {
+  const [inputs, setInputs] = useState({
+    fullname: "",
+    email: "",
+    message: ""
+  });
 
-  const handleChange = (e) =>{}
+ const {fullname, email, message} = inputs;
+
+  const handleChange = (e) =>{
+    const name = e.target.name;
+    const value = e.target.value
+
+    setInputs({...inputs, [name]: value});
+  }
 
   const handleSubmit = (event) =>{
     event.preventDefault();
+    console.log(inputs);
+    window.alert("Message sent successfully!");
+
+    // axios.post("Backend code link here.", inputs)
+    // .then((response) =>{
+    //   console.log(response.data);
+    // })
+    setInputs({
+      fullname: "",
+      email: "",
+      message: ""
+    });
   }
 
 
@@ -39,10 +63,10 @@ const Contact = () => {
           </div>
 
         </div>
-        <form onSubmit={(event) => handleSubmit ()}>
-          <input type='text' name='name' placeholder='Enter your full name' onChange={(e)=>handleChange()}/>
-          <input type='email' name='email' placeholder='Enter your email' onChange={(e)=>handleChange()}/>
-          <textarea type="text" name='message' placeholder='Enter your message' onChange={(e)=>handleChange()}></textarea>
+        <form onSubmit={(event) => handleSubmit (event)}>
+          <input type='text' name='fullname' value={fullname} placeholder='Enter your full name' onChange={(e)=>handleChange(e)}/>
+          <input type='email' name='email' value={email} placeholder='Enter your email' onChange={(e)=>handleChange(e)}/>
+          <textarea type="text" name='message' value={message} placeholder='Enter your message' onChange={(e)=>handleChange(e)}></textarea>
           <button type='submit'>Send</button>
         </form>
       </div>
