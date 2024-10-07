@@ -43,15 +43,17 @@
     color: var(--accent);
 }
 
-#resume{
+#hire{
     box-shadow: var(--box-shadow);
     padding: 8px 30px;
     border-radius: 0 30px 0 30px;
     background-color: var(--accent);
     color: var(--primary);
+    cursor: pointer;
+    transition: 0.5s;
 } 
-#resume:hover{
-    color: var(--faded-black);
+#hire:hover{
+    opacity: 0.6;
 }
 #menu-icon{
 }

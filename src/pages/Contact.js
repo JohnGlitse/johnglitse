@@ -4,6 +4,14 @@ import { FaEnvelope, FaPhone} from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 
 const Contact = () => {
+
+  const handleChange = (e) =>{}
+
+  const handleSubmit = (event) =>{
+    event.preventDefault();
+  }
+
+
   return (
     <div id='contact'>
        <h1>Connect With Me</h1>
@@ -31,10 +39,10 @@ const Contact = () => {
           </div>
 
         </div>
-        <form>
-          <input type='text' name='name' placeholder='Enter your full name' />
-          <input type='email' name='email' placeholder='Enter your email' />
-          <textarea type="text" name='message' placeholder='Enter your message' ></textarea>
+        <form onSubmit={(event) => handleSubmit ()}>
+          <input type='text' name='name' placeholder='Enter your full name' onChange={(e)=>handleChange()}/>
+          <input type='email' name='email' placeholder='Enter your email' onChange={(e)=>handleChange()}/>
+          <textarea type="text" name='message' placeholder='Enter your message' onChange={(e)=>handleChange()}></textarea>
           <button type='submit'>Send</button>
         </form>
       </div>

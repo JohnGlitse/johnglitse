@@ -7,8 +7,8 @@ import {FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaFacebook, FaWhatsapp, Fa
  
 const Home = () => {
   const divStyle ={
-    color: "var(--accent)",
-    backgroundColor: "var(--primary)"
+    color: "var(--primary)",
+    backgroundColor: "var(--accent)"
   }
   return (
     <div id='home'>
@@ -24,11 +24,9 @@ const Home = () => {
             </p>
             <div className='home-buttons'>
                 <a href='#contact'><button className='home-button'>Let's talk</button></a>
-                <a href="mailto:glitsejohnray@gmail.com?subject=Hello&body=I'd%20like%20to%20get%20in%20touch%20with%20you.">
-                  <button className='home-button' style={divStyle}>Hire Me</button>
-                  </a>
                 {/* <Button name="Let's Talk" />
                 <Button name="Hire Me"></Button> */}
+                <a href='Glitse John.pdf' download="John Glitse" className='home-button' style={divStyle}>Resume</a>
             </div>
             
         </div>

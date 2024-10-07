@@ -23,7 +23,7 @@ const Mywork = () => {
             <h2 className='project-title'>Buks</h2>
             <div className='description'>
               This is a book selling website where users can purchase their favorite books ranging from
-              drama, poetry, fiction, non-fiction among others. It fully functional and integrates functionalities 
+              drama, poetry, fiction, non-fiction among others. It is fully functional and integrates functionalities 
               such as search system, adding and removing from cart, user login and registration system among others.
             </div>
             <div className='languages'>
@@ -116,7 +116,7 @@ const Mywork = () => {
           <div className="work-text">
             <h2 className='project-title'>MTN Mobile App UI clone</h2>
             <div className='description'>
-              In this project, cloned the MTN mobile application using FLUTTER only. This is just a clone of the 
+              In this project, I cloned the MTN mobile application using FLUTTER only. This is just a clone of the 
               MTN mobile application UI with no backend.
             </div>
             <div className='languages'>

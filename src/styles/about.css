@@ -59,6 +59,9 @@ h1::before{
     cursor: pointer;
     margin-top: 10px;
 }
+.read-more:hover{
+    opacity: 0.6;
+}
 
 .about-tabs ul{
     display: flex;
@@ -74,6 +77,10 @@ h1::before{
     border-radius: 6px;
     font-family: "poppins";
     font-weight: 700;
+    transition: 0.5s;
+}
+.tab:hover{
+    opacity: 0.6;
 }
 .tab.active::before{
     /* content: "";
