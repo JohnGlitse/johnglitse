@@ -26,10 +26,10 @@ const Contact = () => {
     console.log(inputs);
     Swal.fire("Message sent successfully!");
 
-    // axios.post("Backend code link here.", inputs)
-    // .then((response) =>{
-    //   console.log(response.data);
-    // })
+    axios.post("http://localhost/jglitse/contact.php", inputs)
+    .then((response) =>{
+      console.log(response.data);
+    })
     setInputs({
       fullname: "", email: "", message: "" });
   }
