@@ -6,11 +6,16 @@ import Mywork from './pages/Mywork';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Foot from "./components/Foot";
-import { FaArrowUp, FaSun } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { FaArrowUp} from "react-icons/fa";
+import { useState, useEffect} from "react";
+import { IoSunnyOutline } from "react-icons/io5";
+import { RxMoon } from "react-icons/rx";
+
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+  // const sun = useRef();
+  // const moon = useRef();
 
   // Apply the theme based on localStorage or default to light theme
   useEffect(() => {
@@ -41,6 +46,7 @@ function App() {
     if (isDarkTheme) {
       setSecondaryTheme();
       setIsDarkTheme(false);
+      //sun.current.style.display = "none";
     } else {
       setPrimaryTheme();
       setIsDarkTheme(true);
@@ -82,8 +88,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+       
+      {
+      isDarkTheme? <IoSunnyOutline  onClick={toggleTheme} className="fasun"/> :
+      <RxMoon onClick={toggleTheme} className="fasun"/>
       
-      <FaSun  onClick={toggleTheme} className="fasun" />
+      }
       
       <FaArrowUp style={toTopStyle} onClick={toTop} />
  

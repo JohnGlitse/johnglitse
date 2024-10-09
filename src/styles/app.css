@@ -2,16 +2,15 @@
     --primary: #f5f9ff;
     --secondary: #f2f3f7;
     --accent: #0196e3;
-    /* --accent:  #030257; */
     --faded-black: #555;
     --primary2: #ebeef1;
 
-    /* --primary: #fefae0;
+    /* --primary: #f2e9e4;
+    --primary: #fefae0;
     --secondary: #faedcd;
-    --accent:  #bc6c25; 
-    --alternate: #0196e3; 
+    --accent: #030257; 
     --faded-black: #555;
-    --primary2: #eae2b7;
+    --primary2: #f2e8cf; 
   */
 
  
@@ -29,14 +28,16 @@
 }
 
 [data-theme ="dark"]{
-    --primary: #f2e9e4;
-    --primary: #fefae0;
-    /* --secondary: #c9ada7; */
-    --secondary: #faedcd;
-    /* --accent:  #22223b;  */
-    --accent: #030257; 
-    --faded-black: #555;
-    --primary2: #f2e8cf;        
+      
+
+    --primary: #ced4da;
+    --secondary: #adb5bd;
+    --accent:  #212529; 
+    --alternate: #e9ecef; 
+    --faded-black: #222;
+    --primary2: #cad2c5;   
+    --white-color: #f8f9fa; 
+    
 }
 
 .changeColor{

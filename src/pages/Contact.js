@@ -26,7 +26,7 @@ const Contact = () => {
     console.log(inputs);
     Swal.fire("Message sent successfully!");
 
-    axios.post("http://localhost/jglitse/contact.php", inputs)
+    axios.post("http://localhost/jglitse/contact.php", inputs) //https://buks.greate-site.net/jglitse/contact.php
     .then((response) =>{
       console.log(response.data);
     })
@@ -63,9 +63,9 @@ const Contact = () => {
 
         </div>
         <form onSubmit={(event) => handleSubmit (event)}>
-          <input type='text' name='fullname' value={fullname} placeholder='Enter your full name' onChange={(e)=>handleChange(e)}/>
-          <input type='email' name='email' value={email} placeholder='Enter your email' onChange={(e)=>handleChange(e)}/>
-          <textarea type="text" name='message' value={message} placeholder='Enter your message' onChange={(e)=>handleChange(e)}></textarea>
+          <input type='text' name='fullname' value={fullname} placeholder='Enter your full name' onChange={(e)=>handleChange(e)} required/>
+          <input type='email' name='email' value={email} placeholder='Enter your email' onChange={(e)=>handleChange(e)} required/>
+          <textarea type="text" name='message' value={message} placeholder='Enter your message' onChange={(e)=>handleChange(e)} required></textarea>
           <button type='submit'>Send</button>
         </form>
       </div>
